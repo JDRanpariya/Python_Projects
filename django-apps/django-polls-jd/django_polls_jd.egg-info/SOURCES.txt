@@ -1,7 +1,6 @@
 LICENSE
 MANIFEST.in
-README.md
-setup.cfg
+README.rst
 setup.py
 django_polls_jd.egg-info/PKG-INFO
 django_polls_jd.egg-info/SOURCES.txt

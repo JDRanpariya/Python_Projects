@@ -1,24 +1,16 @@
 Metadata-Version: 1.1
 Name: django-polls-jd
 Version: 0.1
-Summary: A Django app to conduct Web-based polls.
-Home-page: https://jdranpariya.github.io/
+Summary: Django app to create Web-based polls.
+Home-page: UNKNOWN
 Author: JDRanpariya
 Author-email: jdpatel.code@gmail.com
-License: MIT  # Example license
+License: UNKNOWN
 Description: UNKNOWN
 Platform: UNKNOWN
+Classifier: Develpement Status :: 1 - Beta
 Classifier: Environment :: Web Environment
-Classifier: Framework :: Django
-Classifier: Framework :: Django :: 3.1  # Replace "X.Y" as appropriate
 Classifier: Intended Audience :: Developers
-Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: BSD License
 Classifier: Operating System :: OS Independent
 Classifier: Programming Language :: Python
-Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3 :: Only
-Classifier: Programming Language :: Python :: 3.6
-Classifier: Programming Language :: Python :: 3.7
-Classifier: Programming Language :: Python :: 3.8
-Classifier: Topic :: Internet :: WWW/HTTP
-Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
