@@ -1,11 +1,23 @@
 <!DOCTYPE html>
+
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width">
         <title>Polls App</title>
     </head>
     <body>
+        <nav  class="navbar navbar-dark bg-primary">
+              <div class="container-fluid" class="navbar navbar-dark bg-primary">
+                      <a class="navbar-brand" href="#">
+                                     Polls App 
+                                          </a>
+                                            </div>
+        </nav>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href='{% static 'polls/style.css' %}'>
         {% if latest_question_list %}
             <ul>
                 {% for question in latest_question_list %}
