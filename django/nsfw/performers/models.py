@@ -14,7 +14,7 @@ class Performer(models.Model):
         INTERSEX = 'IS', _('INTERSEX')
 
     name = models.CharField("Name", max_length=50)
-    url = models.URLField()
+    url = models.URLField(max_length=200)
     gender = models.CharField(max_length=8,
                               choices=Gender.choices,
                               default=Gender.FEMALE)

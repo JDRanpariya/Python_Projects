@@ -5,4 +5,4 @@ class PerformerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Performer
-        fields = ('id', 'name', 'gender')
+        fields = ('id', 'name', 'url', 'gender', 'aliases', 'favorite')
