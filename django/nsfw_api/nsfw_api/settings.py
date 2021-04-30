@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '%rbgii=3)%@)l*l#x)1ank0g8f9dc7(*!22k%21_kvi^@md4h-'
+SECRET_KEY = os.getenv("SECRET")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -74,12 +78,24 @@ WSGI_APPLICATION = 'nsfw_api.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
+        'default': {
+
+                    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+                    'NAME': os.getenv("NAME"),
+
+                    'USER': os.getenv("USER"),
+
+                    'PASSWORD': os.getenv("PASS"),
+
+                    'HOST': os.getenv("HOST"),
+
+                    'PORT': os.getenv("PORT"),
+
+        }
+
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

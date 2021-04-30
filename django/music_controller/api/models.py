@@ -20,4 +20,4 @@ class Room(models.Model):
     guest_can_pause = models.BooleanField(null=False, default=False)
     created_at = models.DateField(auto_now_add=True)
     votes_to_skip = models.IntegerField(null=False, default=1)
-    
+
